@@ -40,19 +40,19 @@ To get started, clone the repository and install any dependencies.
 
 If you're using `pipenv`:
 
-\`\`\`bash
+```bash
 git clone <repo-url>
 cd flask-rest-get-api
 pipenv install
-\`\`\`
+```
 
 If you're using `pip`:
 
-\`\`\`bash
+```bash
 git clone <repo-url>
 cd flask-rest-get-api
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### Writing the GET API with Flask
 
@@ -60,7 +60,7 @@ We’ll define all our routes inside `app.py` and simulate our product catalog w
 
 #### Example: `app.py`
 
-\`\`\`python
+```python
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
@@ -93,15 +93,15 @@ def get_product_by_id(id):
 
 if __name__ == "__main__":
     app.run(debug=True)
-\`\`\`
+```
 
 ### Testing the API
 
 Run the app using:
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 Then visit or test the following endpoints:
 
